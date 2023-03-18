@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <img class="trophy" src="trophy.png" alt="">
+    <img class="stars" src="stars.png" alt="">
+    <div class="hurray">HURRAY!!</div>
+    <div class="text">YOU WON THE GAME</div>
+    <a class="play" href="index.html">PLAY AGAIN</a>
+    <div class="open-button rules"  onclick="openForm()" >RULES</div>
+    <div id="myForm" class="guidelines">
+        <!-- <div id="button" onclick="closeForm()" class="x">X</div> -->
+        <div class="heading">GAME RULES</div>
+        <ul class="points">
+        <li class="ul_1" id="ul1">Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+        <li class="ul_1" id="ul2">Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li>
+        <li class="ul_1" id="ul3">Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+        <li class="ul_1" id="ul4">If both players lay down the same hand, each player lays down another hand</li>
+    </ul>
+    </div>
+    <div id="button" onclick="closeForm()" class="x">X</div>
+    <script>
+        function openForm() {
+    document.getElementById("button").style.display = "block";
+
+    document.getElementById("myForm").style.display = "block";
+    
+    }
+
+function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+    document.getElementById("button").style.display = "none";
+    }
+    </script>
+</body>
+</html>
